@@ -18,9 +18,7 @@ app.use('/api/v1', mainRouter);
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
 
-setInterval(() => {
-  axios.get("https://jwt-7f1f.onrender.com/")
-}, 1000 * 60 * 5);
+
 const port = process.env.PORT || 3000;
 
 const start = async () => 
